@@ -52,6 +52,8 @@ func getRandomPort() (int, error) {
 	return listener.Addr().(*net.TCPAddr).Port, nil
 }
 
+//Some test line - more
+
 func TestStartAriesD(t *testing.T) {
 	// TODO - remove this path manipulation after implementing #175 and #148
 	path, cleanup := generateTempDir(t)
