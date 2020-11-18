@@ -45,7 +45,7 @@ type FormattedProvider struct {
 // The Formatter is also used to restore the original format of data being retrieved from Provider.
 // If the underlying provider already does filtering using the startKey and endKey parameters in its
 // Iterator(startKey, endKey string) method, then set skipIteratorFiltering to true to avoid redundant
-// filtering in FormattedProvider.
+// filtering in FormattedProvider. // Something
 func NewFormattedProvider(provider storage.Provider, formatter Formatter,
 	skipIteratorFiltering bool) *FormattedProvider {
 	return &FormattedProvider{
